@@ -1,10 +1,10 @@
 export const items = [
   {
-    title: { en: "Saj", ar: "" },
+    title: { en: "Saj", ar: "صاج" },
     component: [
-      { name: { en: "CHEESE", ar: "" }, price: "6.000" },
-      { name: { en: "ZATAAR", ar: "" }, price: "4.000" },
-      { name: { en: "MIX", ar: "" }, price: "5.000" },
+      { name: { en: "CHEESE", ar: "جبنة" }, price: "6.000" },
+      { name: { en: "ZATAAR", ar: "زعتر" }, price: "4.000" },
+      { name: { en: "MIX", ar: "ميكس" }, price: "5.000" },
       { name: { en: "KASHKAVAL", ar: "" }, price: "7.000" },
       { name: { en: "TURKEY & KASHKAVAL", ar: "" }, price: "7.000" },
       { name: { en: "KESHEK MAN’OUSHE", ar: "" }, price: "7.000" }
@@ -12,7 +12,7 @@ export const items = [
     options: { en: "Add Vegetables 2.000", ar: "" }
   },
   {
-    title: { en: "Hot Drinks", ar: "" },
+    title: { en: "Hot Drinks", ar: "مشروبات ساخنة" },
     component: [
       { name: { en: "ESPRESSO", ar: "" }, price: "3.000" },
       { name: { en: "DOUBLE ESPRESSO", ar: "" }, price: "5.000" },
@@ -28,7 +28,7 @@ export const items = [
     ]
   },
   {
-    title: { en: "Frappe", ar: "" },
+    title: { en: "Frappe", ar: "فارابي" },
 
     component: [
       { name: { en: "CARAMEL", ar: "" }, price: "10.000" },
@@ -37,7 +37,7 @@ export const items = [
     ]
   },
   {
-    title: { en: "Shakes", ar: "" },
+    title: { en: "Shakes", ar: "شيك" },
     component: [
       {
         name: { en: "OREO SHAKE", ar: "" },

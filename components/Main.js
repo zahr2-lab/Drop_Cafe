@@ -19,7 +19,7 @@ const Main = ({ setLang, setMain }) => {
           <div
             className="btn"
             onClick={() => {
-              setLang("er");
+              setLang("ar");
               setMain(false);
             }}
           >

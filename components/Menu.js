@@ -6,7 +6,7 @@ const Menu = ({ lang, setMain }) => {
       <div className="container">
         <img src="/img/headerimg.jpg" alt="" className="img" />
 
-        <div className="menu">MENU</div>
+        <div className="menu">M E N U</div>
         {items.map((item, i) => {
           return (
             <>
@@ -39,7 +39,7 @@ const Menu = ({ lang, setMain }) => {
       </div>
       <style jsx>{`
         .menu {
-          font-size: 2rem;
+          font-size: 2.2rem;
         }
         .container {
           background: white;
@@ -49,6 +49,7 @@ const Menu = ({ lang, setMain }) => {
           flex-direction: column;
           align-items: center;
           min-width: 20rem;
+          direction: ${lang === "ar" && "rtl"};
         }
         .box {
           display: flex;
