@@ -37,6 +37,7 @@ const Main = ({ setLang, setMain }) => {
           display: flex;
           justify-content: center;
           padding-top: 2rem;
+          z-index: 1;
         }
         .menu {
           width: 20rem;
@@ -45,6 +46,8 @@ const Main = ({ setLang, setMain }) => {
           justify-content: center;
           align-items: center;
           padding-bottom: 1.5rem;
+          z-index: 1;
+          background: white;
         }
 
         .btn {
@@ -57,23 +60,6 @@ const Main = ({ setLang, setMain }) => {
           line-height: 2rem;
           padding: 0.2rem;
           cursor: pointer;
-        }
-
-        body {
-          background-image: linear-gradient(black, black),
-            url("/img/headerimg.jpg");
-          background-size: cover;
-          background-blend-mode: saturation;
-          background-attachment: fixed;
-          background-position: center center;
-          background-color: transparent;
-          font-size: 18px;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-            "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-            "Helvetica Neue", sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
         }
 
         .header {

@@ -40,6 +40,24 @@ export default function Index() {
         *::-webkit-scrollbar {
           display: none;
         }
+
+        body {
+          background-image: linear-gradient(black, black),
+            url("/img/headerimg.jpg");
+          background-size: cover;
+          background-blend-mode: saturation;
+          background-attachment: fixed;
+          background-position: center center;
+          background-color: transparent;
+          font-size: 18px;
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+            "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+            "Helvetica Neue", sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          z-index: -10;
+        }
       `}</style>
     </>
   );
