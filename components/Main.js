@@ -34,18 +34,31 @@ const Main = ({ setLang, setMain }) => {
           box-sizing: border-box;
         }
         .container {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
           padding-top: 2rem;
           z-index: 1;
         }
         .menu {
           width: 20rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
-          padding-bottom: 1.5rem;
+          padding-bottom: 2rem;
           z-index: 1;
           background: white;
         }
@@ -67,6 +80,8 @@ const Main = ({ setLang, setMain }) => {
         }
 
         .row-box {
+          -webkit-box-shadow: 0px 10px 14.1px 0.9px rgba(0, 0, 0, 0.24),
+            0px 4px 19.6px 0.4px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 10px 14.1px 0.9px rgba(0, 0, 0, 0.24),
             0px 4px 19.6px 0.4px rgba(0, 0, 0, 0.16);
           max-width: 100%;

@@ -40,11 +40,20 @@ export default function Index() {
         *::-webkit-scrollbar {
           display: none;
         }
-
         body {
+          background-image: -webkit-gradient(
+              linear,
+              left top,
+              left bottom,
+              from(black),
+              to(black)
+            ),
+            url("/img/headerimg.jpg");
+          background-image: -o-linear-gradient(black, black),
+            url("/img/headerimg.jpg");
           background-image: linear-gradient(black, black),
             url("/img/headerimg.jpg");
-          background-size: cover;
+          background-size: 100vh;
           background-blend-mode: saturation;
           background-attachment: fixed;
           background-position: center center;
