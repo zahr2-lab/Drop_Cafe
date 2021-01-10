@@ -42,8 +42,9 @@ const Menu = ({ lang }) => {
   return (
     <>
       <div className="container">
-        <img src="/img/headerimg.jpg" alt="" className="img" />
-        <div className="menu">M E N U</div>
+        <div className="imgContainer">
+          <img src="/img/Stick.jpg" alt="" className="img" />
+        </div>
         {categories.map((category, i) => (
           <>
             <div className="box">
@@ -86,9 +87,6 @@ const Menu = ({ lang }) => {
       </div>
 
       <style jsx>{`
-        .menu {
-          font-size: 2.2rem;
-        }
         .container {
           background: white;
           border: solid black;
@@ -123,10 +121,10 @@ const Menu = ({ lang }) => {
           padding: 2rem;
         }
         .title {
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-width: bold;
           color: ${colors.primaryColor};
-          padding: 0.8rem 0;
+          padding: 1rem 0;
         }
         .row {
           font-size: 1.3rem;
@@ -155,9 +153,17 @@ const Menu = ({ lang }) => {
           width: 5rem;
           border-bottom: 1px solid ${colors.primaryColor};
         }
+        .imgContainer {
+          width: 100%;
+          padding-top: 1rem;
+          position: sticky;
+          top: 0;
+          background: white;
+          text-align: center;
+        }
         .img {
           width: 100%;
-          max-width: 22rem;
+          max-width: 18rem;
           margin: 0 auto;
         }
         .price {

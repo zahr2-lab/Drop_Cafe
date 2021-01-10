@@ -4,7 +4,7 @@ const Main = ({ setLang, setMain }) => {
     <>
       <div className="container">
         <div className="row-box menu">
-          <img src="/img/headerimg.jpg" alt="" className="header" />
+          <img src="/img/Stick.jpg" alt="" className="header" />
           <h1 className="title">MENU</h1>
           <p>Every drop counts...</p>
           <div
@@ -31,6 +31,7 @@ const Main = ({ setLang, setMain }) => {
         * {
           margin: 0;
           padding: 0;
+          -webkit-box-sizing: border-box;
           box-sizing: border-box;
         }
         .container {
@@ -77,8 +78,8 @@ const Main = ({ setLang, setMain }) => {
 
         .header {
           width: 100%;
+          padding: 5rem 0;
         }
-
         .row-box {
           -webkit-box-shadow: 0px 10px 14.1px 0.9px rgba(0, 0, 0, 0.24),
             0px 4px 19.6px 0.4px rgba(0, 0, 0, 0.16);
@@ -88,7 +89,6 @@ const Main = ({ setLang, setMain }) => {
           position: relative;
           margin-bottom: 30px;
         }
-
         p {
           font-size: 18px;
           margin-top: 10px;

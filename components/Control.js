@@ -21,18 +21,31 @@ export default function Control({ count, setCount, id }) {
       </div>
       <style jsx>{`
         .btnContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
           direction: ltr;
         }
+
         .btn {
           width: 1.5rem;
           height: 1.5rem;
           border: 1px solid ${colors.primaryColor};
           border-radius: 5rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
           color: ${colors.primaryColor};
         }

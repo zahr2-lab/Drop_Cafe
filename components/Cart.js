@@ -16,12 +16,7 @@ export default function Cart({ lang, cart, total }) {
           <div className="cartBox">
             {cart.map((item, index) => (
               <div key={index} className="row">
-                <div className="name">
-                  {item.name[lang]}
-                  <div className="details">
-                    {item.details && item.details[lang]}
-                  </div>
-                </div>
+                <div className="name">{item.name[lang]}</div>
                 <div className="control">x{item.count}</div>
                 <div className="price">{item.price * item.count}</div>
               </div>
@@ -29,7 +24,7 @@ export default function Cart({ lang, cart, total }) {
           </div>
         )}
         <button className="cartBtn">
-          {lang === "en" ? "Check Out" : "إرسال"}
+          {lang === "en" ? "Check Out" : "الدفع"}
         </button>
       </div>
       <style jsx>{`
@@ -40,19 +35,34 @@ export default function Cart({ lang, cart, total }) {
           color: white;
           position: fixed;
           bottom: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
           justify-content: space-between;
         }
+
         .cartTitle {
           width: 100%;
           font-size: 1.2rem;
           padding: 0.5rem 2rem;
           background: ${colors.primaryColor};
           color: white;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
           justify-content: space-between;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
+          box-shadow: 0px 0px 5px 2px #aaa;
         }
         .cartBox {
           height: 6rem;
@@ -63,7 +73,12 @@ export default function Cart({ lang, cart, total }) {
           background: white;
           color: ${colors.primaryColor};
           overflow: auto;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
         }
         .cartBtn {
@@ -93,6 +108,8 @@ export default function Cart({ lang, cart, total }) {
         .price {
           text-align: ${lang === "en" ? "right" : "left"};
           padding: 0 0.2rem;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 8rem;
           flex: 1 1 8rem;
         }
         .price:after {
