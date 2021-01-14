@@ -7,6 +7,7 @@ const Menu = ({ lang }) => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
+  const [msg, setMsg] = useState("");
 
   useEffect(() => {
     var a = 1;
@@ -16,7 +17,16 @@ const Menu = ({ lang }) => {
   }, []);
   useEffect(() => {
     setCart(products.filter((product) => product.count > 0));
-  }, [products]);
+    const filteredProduct = products.filter((product) => product.count > 0);
+    setMsg(
+      filteredProduct
+        .map((product) => product.name.en + " x" + product.count)
+        .toString() +
+        " Total : " +
+        total +
+        ".000 LBP"
+    );
+  }, [products, total]);
   useEffect(() => {
     cart.length > 0 &&
       setTotal(
@@ -83,7 +93,9 @@ const Menu = ({ lang }) => {
           </>
         ))}
         <img src="/img/hookah.png" alt="" className="img" />
-        {cart.length !== 0 && <Cart lang={lang} cart={cart} total={total} />}
+        {cart.length !== 0 && (
+          <Cart lang={lang} cart={cart} total={total} msg={msg} />
+        )}
       </div>
 
       <style jsx>{`

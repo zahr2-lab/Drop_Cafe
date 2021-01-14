@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { colors } from "../public/js/options";
+import Link from "next/link";
 
-export default function Cart({ lang, cart, total }) {
+export default function Cart({ lang, cart, total, msg }) {
   const [open, setOpen] = useState(false);
-
   return (
     <>
       <div className="cartContainer">
@@ -23,9 +23,11 @@ export default function Cart({ lang, cart, total }) {
             ))}
           </div>
         )}
-        <button className="cartBtn">
-          {lang === "en" ? "Check Out" : "الدفع"}
-        </button>
+        <Link href={`https://wa.me/+96181026095?text=${msg}`}>
+          <button className="cartBtn">
+            {lang === "en" ? "Check Out" : "الدفع"}
+          </button>
+        </Link>
       </div>
       <style jsx>{`
         .cartContainer {
