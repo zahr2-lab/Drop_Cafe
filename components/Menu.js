@@ -92,7 +92,7 @@ const Menu = ({ lang }) => {
             <div className="line"></div>
           </>
         ))}
-        <img src="/img/hookah.png" alt="" className="img" />
+        <img src="/img/Hookah.png" alt="" className="hookaimg" />
         {cart.length !== 0 && (
           <Cart lang={lang} cart={cart} total={total} msg={msg} />
         )}
@@ -182,6 +182,12 @@ const Menu = ({ lang }) => {
           text-align: ${lang === "en" ? "right" : "left"};
           padding: 0 0.2rem;
           flex: 1 1 8rem;
+        }
+        .hookaimg {
+          transform: translateX(-1.2rem);
+          width: 80%;
+          max-width: 30rem;
+          margin: 2rem auto;
         }
         .price:after {
           content: ".000";
